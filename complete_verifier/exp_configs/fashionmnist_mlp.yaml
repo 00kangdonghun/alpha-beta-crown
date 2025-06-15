@@ -1,0 +1,15 @@
+model:
+  path: /home1/danny472/alpha-beta-CROWN/complete_verifier/models/fashionmnist_mlp.pth
+  name: Customized("fashion_model_data", "fashionmlp", in_features=784, out_dim=10)
+  input_shape: [1, 1, 28, 28]
+
+data:
+  dataset: Customized("fashion_model_data", "fashionmnist")
+  mean: [0.0]
+  std: [1.0]
+  start: 0
+  end: 10
+
+specification:
+  norm: .inf
+  epsilon: 0.03
