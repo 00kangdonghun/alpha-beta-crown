@@ -31,8 +31,5 @@ module load cuda/12.2.1
 ######################################################################################
 
 cd complete_verifier
-# python abcrown.py --config exp_configs/fashionmnist_example.yaml 
 
 python abcrown.py --config exp_configs/fashionmnist_mlp.yaml 
-
-# python abcrown.py --config exp_configs/tutorial_examples/cifar_resnet_2b.yaml
